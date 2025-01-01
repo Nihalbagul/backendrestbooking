@@ -12,10 +12,11 @@ const app = express();
 
 // CORS Configuration
 app.use(cors({
-  origin: '*', // Allows requests from all origins
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
-  allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
+  origin: 'http://localhost:3000', // Change this to your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 
 // Body Parser Middleware
 app.use(bodyParser.json());
